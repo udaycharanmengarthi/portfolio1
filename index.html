@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday Charan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Landing Page (Hero Section) -->
+    <div id="home">
+        <div class="container">
+            <nav class="navbar">
+                <img src="images/logo.png.jpg" class="logo" alt="Uday Charan Logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#my-skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button class="nav-toggle close-btn" onclick="closemenu()" aria-label="Close menu">✕</button>
+                </ul>
+                <button class="nav-toggle menu-btn" onclick="openmenu()" aria-label="Open menu">☰</button>
+            </nav>
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <p class="hero-subtitle" data-animate="fadeInUp">Hello, I'm</p>
+                    <h1 class="hero-title" data-animate="fadeInUp">Uday Charan</h1>
+                    <p class="hero-tagline" data-animate="fadeInUp">A Passionate <span>Front-End Developer</span></p>
+                    <div class="cta-buttons" data-animate="fadeInUp">
+                        <a href="#projects" class="btn">Explore My Work</a>
+                        <a href="#contact" class="btn btn2">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png.jpg" class="user-png" alt="Uday Charan Profile Picture"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-para">
+                        I am a passionate Front-End Developer skilled in creating beautiful and functional websites. I specialize in HTML, CSS, JavaScript, and various front-end frameworks. I’m always eager to learn new technologies and enhance my skills.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing responsive web interfaces</li>
+                            <li><span>Full-Stack Development</span><br>Building both Front-End and Back-End solutions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019–2025</span><br>B.Tech from CMR Institute of Technology</li>
+                            <li><span>2017–2019</span><br>Intermediate from Narayana Junior College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p class="about-para">
+                        Developed responsive websites using HTML, CSS, and JavaScript, focusing on user-friendly interfaces and modern design principles.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Full-Stack Development</h2>
+                    <p class="about-para">
+                        Built end-to-end applications with React for the front-end and Node.js/MongoDB for the back-end, ensuring seamless functionality.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="my-skills">
+        <h1><span style="color: white;">My </span><span class="highlight">Skills</span></h1>
+        <div class="skills-grid">
+            <img src="images/Python.png" alt="Python">
+            <img src="images/html.png" alt="HTML">
+            <img src="images/css.png" alt="CSS">
+            <img src="images/javascript.png" alt="JavaScript">
+        </div>
+        <div class="skills-grid">
+            <img src="images/react.png" class="skills-img" alt="React">
+            <img src="images/mongo.png" alt="MongoDB">
+            <img src="images/bootstrap.png" alt="Bootstrap">
+            <img src="images/java.png" alt="Java">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><span class="icon">✉️</span> Udaycharan119@gmail.com</p>
+                    <p><span class="icon">📞</span> 9494580934</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/udaycharanmengarthi" aria-label="GitHub Profile">
+                            <span class="icon"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/uday-charan-mengarthi/" aria-label="LinkedIn Profile">
+                            <span class="icon">💼</span>
+                        </a>
+                    </div>
+                    <a href="images/udaycharan.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Enter your name" required aria-label="Your Name">
+                        <input type="email" name="email" placeholder="Enter your email" required aria-label="Your Email">
+                        <textarea name="message" rows="6" placeholder="Enter your message" required aria-label="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <p id="form-message" class="form-message"></p>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright © 2023 Uday Charan <span class="icon">❤️</span> All rights reserved</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Tab Functionality for About Section
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Mobile Menu Functionality
+        const sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        // Form Submission Handler
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const formMessage = document.getElementById("form-message");
+            formMessage.textContent = "Thank you for your message! I'll get back to you soon.";
+            formMessage.style.color = "#ff004f";
+            this.reset();
+        });
+
+        // Animation on Scroll
+        const animateElements = document.querySelectorAll('[data-animate]');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        animateElements.forEach(el => observer.observe(el));
+
+        // Navbar Blur on Scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-blur');
+            } else {
+                navbar.classList.remove('navbar-blur');
+            }
+        });
+    </script>
+</body>
+</html>
